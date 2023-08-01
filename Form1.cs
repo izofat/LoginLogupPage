@@ -81,7 +81,7 @@ namespace Password_checker
         private void GetMaxID()
         {
             connection.Open();
-            SqlCommand command = new SqlCommand("Select MAX(ID) from UserInfo", connection);       // ,,,,,,,,UserInfo....... you should write the table name in your database you are currently working on
+            SqlCommand command = new SqlCommand("Select MAX(ID) from UserInfo", connection);       // ........UserInfo....... you should write the table name in your database you are currently working on
             object result = command.ExecuteScalar();
             if (result == DBNull.Value)
             {
